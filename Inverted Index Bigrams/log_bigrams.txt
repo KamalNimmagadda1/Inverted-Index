@@ -1,0 +1,112 @@
+/usr/lib/hadoop/libexec//hadoop-functions.sh: line 2400: HADOOP_COM.GOOGLE.CLOUD.HADOOP.SERVICES.AGENT.JOB.SHIM.HADOOPRUNCLASSSHIM_USER: invalid variable name
+/usr/lib/hadoop/libexec//hadoop-functions.sh: line 2365: HADOOP_COM.GOOGLE.CLOUD.HADOOP.SERVICES.AGENT.JOB.SHIM.HADOOPRUNCLASSSHIM_USER: invalid variable name
+/usr/lib/hadoop/libexec//hadoop-functions.sh: line 2460: HADOOP_COM.GOOGLE.CLOUD.HADOOP.SERVICES.AGENT.JOB.SHIM.HADOOPRUNCLASSSHIM_OPTS: invalid variable name
+2021-03-28 06:26:47,007 INFO client.RMProxy: Connecting to ResourceManager at irhw3-m/10.138.0.2:8032
+2021-03-28 06:26:47,244 INFO client.AHSProxy: Connecting to Application History server at irhw3-m/10.138.0.2:10200
+2021-03-28 06:26:48,338 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-03-28 06:26:48,357 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1616905126565_0004
+2021-03-28 06:26:49,118 WARN concurrent.ExecutorHelper: Thread (Thread[GetFileInfo #1,5,main]) interrupted: 
+java.lang.InterruptedException
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:510)
+	at com.google.common.util.concurrent.FluentFuture$TrustedFuture.get(FluentFuture.java:88)
+	at org.apache.hadoop.util.concurrent.ExecutorHelper.logThrowableFromAfterExecute(ExecutorHelper.java:48)
+	at org.apache.hadoop.util.concurrent.HadoopThreadPoolExecutor.afterExecute(HadoopThreadPoolExecutor.java:90)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1157)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-28 06:26:49,124 INFO input.FileInputFormat: Total input files to process : 5
+2021-03-28 06:26:49,233 INFO mapreduce.JobSubmitter: number of splits:5
+2021-03-28 06:26:49,455 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1616905126565_0004
+2021-03-28 06:26:49,457 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2021-03-28 06:26:49,683 INFO conf.Configuration: resource-types.xml not found
+2021-03-28 06:26:49,684 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2021-03-28 06:26:49,776 INFO impl.YarnClientImpl: Submitted application application_1616905126565_0004
+2021-03-28 06:26:49,815 INFO mapreduce.Job: The url to track the job: http://irhw3-m:8088/proxy/application_1616905126565_0004/
+2021-03-28 06:26:49,816 INFO mapreduce.Job: Running job: job_1616905126565_0004
+2021-03-28 06:27:01,210 INFO mapreduce.Job: Job job_1616905126565_0004 running in uber mode : false
+2021-03-28 06:27:01,212 INFO mapreduce.Job:  map 0% reduce 0%
+2021-03-28 06:27:19,416 INFO mapreduce.Job:  map 13% reduce 0%
+2021-03-28 06:27:21,438 INFO mapreduce.Job:  map 27% reduce 0%
+2021-03-28 06:27:22,444 INFO mapreduce.Job:  map 67% reduce 0%
+2021-03-28 06:27:23,461 INFO mapreduce.Job:  map 73% reduce 0%
+2021-03-28 06:27:37,564 INFO mapreduce.Job:  map 75% reduce 0%
+2021-03-28 06:27:39,584 INFO mapreduce.Job:  map 82% reduce 0%
+2021-03-28 06:27:40,590 INFO mapreduce.Job:  map 87% reduce 0%
+2021-03-28 06:27:51,803 INFO mapreduce.Job:  map 90% reduce 0%
+2021-03-28 06:27:52,810 INFO mapreduce.Job:  map 93% reduce 0%
+2021-03-28 06:27:55,832 INFO mapreduce.Job:  map 97% reduce 0%
+2021-03-28 06:27:56,839 INFO mapreduce.Job:  map 100% reduce 0%
+2021-03-28 06:28:13,953 INFO mapreduce.Job:  map 100% reduce 20%
+2021-03-28 06:28:14,960 INFO mapreduce.Job:  map 100% reduce 52%
+2021-03-28 06:28:16,973 INFO mapreduce.Job:  map 100% reduce 85%
+2021-03-28 06:28:21,002 INFO mapreduce.Job:  map 100% reduce 93%
+2021-03-28 06:28:23,032 INFO mapreduce.Job:  map 100% reduce 100%
+2021-03-28 06:28:25,056 INFO mapreduce.Job: Job job_1616905126565_0004 completed successfully
+2021-03-28 06:28:25,172 INFO mapreduce.Job: Counters: 60
+	File System Counters
+		FILE: Number of bytes read=1485186508
+		FILE: Number of bytes written=2256399447
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		GS: Number of bytes read=186979991
+		GS: Number of bytes written=171370800
+		GS: Number of read operations=45652
+		GS: Number of large read operations=0
+		GS: Number of write operations=20647236
+		HDFS: Number of bytes read=705
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=5
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed reduce tasks=1
+		Launched map tasks=5
+		Launched reduce tasks=6
+		Rack-local map tasks=5
+		Total time spent by all maps in occupied slots (ms)=606283776
+		Total time spent by all reduces in occupied slots (ms)=354468864
+		Total time spent by all map tasks (ms)=197358
+		Total time spent by all reduce tasks (ms)=115387
+		Total vcore-milliseconds taken by all map tasks=197358
+		Total vcore-milliseconds taken by all reduce tasks=115387
+		Total megabyte-milliseconds taken by all map tasks=606283776
+		Total megabyte-milliseconds taken by all reduce tasks=354468864
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=31158073
+		Map output bytes=706499145
+		Map output materialized bytes=768815441
+		Input split bytes=705
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=5161809
+		Reduce shuffle bytes=768815441
+		Reduce input records=31158073
+		Reduce output records=5161809
+		Spilled Records=91348392
+		Shuffled Maps =25
+		Failed Shuffles=0
+		Merged Map outputs=25
+		GC time elapsed (ms)=11343
+		CPU time spent (ms)=245980
+		Physical memory (bytes) snapshot=10890715136
+		Virtual memory (bytes) snapshot=43659837440
+		Total committed heap usage (bytes)=10432806912
+		Peak Map Physical memory (bytes)=1881903104
+		Peak Map Virtual memory (bytes)=4371800064
+		Peak Reduce Physical memory (bytes)=804487168
+		Peak Reduce Virtual memory (bytes)=4383207424
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=186979991
+	File Output Format Counters 
+		Bytes Written=171370800
+Job output is complete
